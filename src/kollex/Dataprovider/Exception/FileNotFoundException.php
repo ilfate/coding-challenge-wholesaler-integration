@@ -1,10 +1,7 @@
-<?php
-declare(strict_types=1);
-
+<?php declare(strict_types=1);
 
 namespace kollex\Dataprovider\Exception;
 
-
-class UnimplementedDataType extends \Exception
+class FileNotFoundException extends \Exception
 {
 }

@@ -1,13 +1,15 @@
 <?php
 
-
 namespace kollex\Dataprovider\Assortment;
 
+use kollex\Entity\IProduct;
+use kollex\Entity\WholesalerDataSource;
 
-interface DataProvider
+interface IDataProvider
 {
     /**
-     * @return Product[]
+     * @param WholesalerDataSource $dataSource
+     * @return IProduct[]
      */
-    public function getProducts() : array;
+    public function getProducts(WholesalerDataSource $dataSource) : array;
 }

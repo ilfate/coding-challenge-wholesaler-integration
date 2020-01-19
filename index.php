@@ -2,8 +2,9 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-$container = new DI\Container();
-
+$builder = new DI\ContainerBuilder();
+$builder->addDefinitions('di.php');
+$container = $builder->build();
 $application = $container->get(\kollex\Application\Application::class);
 
 $application->run();

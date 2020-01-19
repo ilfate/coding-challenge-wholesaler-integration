@@ -1,12 +1,12 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
-
-namespace kollex\Config\Entity;
-
+namespace kollex\Entity;
 
 class WholesalerDataSource
 {
+    const TYPE_CSV = 'csv';
+    const TYPE_JSON = 'json';
+
     /**
      * @var string
      */

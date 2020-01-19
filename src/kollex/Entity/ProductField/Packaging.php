@@ -4,8 +4,12 @@ namespace kollex\Entity\ProductField;
 
 use MyCLabs\Enum\Enum;
 
-class BaseProductPackaging extends Enum
+class Packaging extends Enum
 {
-    private const BO = 'BO';
-    private const CN = 'CN';
+    /** @var string case */
+    public const CA = 'CA';
+    /** @var string box */
+    public const BX = 'BX';
+    /** @var string bottle */
+    public const BO = 'BO';
 }

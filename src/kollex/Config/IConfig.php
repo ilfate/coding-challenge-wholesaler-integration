@@ -1,11 +1,13 @@
-<?php
-declare(strict_types=1);
-
+<?php declare(strict_types=1);
 
 namespace kollex\Config;
 
+use kollex\Entity\WholesalerDataSource;
 
-class IConfig
+interface IConfig
 {
-
+    /**
+     * @return WholesalerDataSource[]
+     */
+    public function getConfig(): array;
 }

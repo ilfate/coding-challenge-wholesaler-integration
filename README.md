@@ -60,3 +60,12 @@ enough. The focus of this task is the implementation of the data integration, va
 - Docker setup: a Dockerfile and a docker-compose file, to run the whole stack via `docker-compose up`
 - descriptions, why you chose a specific structure or pattern, framework or library compared to other options 
 - an description of how you decided what tests to write
+
+## Solution
+`composer install`
+
+`docker-compose up -d`
+
+open `http://localhost:8023/` - to see the result
+
+run `php vendor/phpunit/phpunit/phpunit test` for tests

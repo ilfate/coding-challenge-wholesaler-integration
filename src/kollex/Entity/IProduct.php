@@ -1,12 +1,24 @@
 <?php
 
 
-namespace kollex\Dataprovider\Assortment;
+namespace kollex\Entity;
 
 
-interface IProduct
+use kollex\Entity\ProductField\BaseProductPackaging;
+use kollex\Entity\ProductField\BaseProductUnit;
+use kollex\Entity\ProductField\Packaging;
+
+interface IProduct extends \JsonSerializable
 {
-    /**
-     * To be implemented
-     */
+    public function __construct(
+        string $id,
+        string $manufacturer,
+        string $name,
+        Packaging $packaging,
+        BaseProductPackaging $baseProductPackaging,
+        BaseProductUnit $baseProductUnit,
+        float $baseProductAmount,
+        int $baseProductQuantity,
+        string $gtin = null
+    );
 }
